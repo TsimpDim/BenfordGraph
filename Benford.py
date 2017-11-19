@@ -1,27 +1,43 @@
-import re
-import matplotlib
+import sys
+from re import findall
+import matplotlib.pyplot as plt
 
 def main():
 
     frequencies = [0] * 10
+    leading_numbers = []
 
-    test_string = "awdwd0123dk34k2k4kk565n1jio34awd-21323wd,23.21"
+    text = open(sys.argv[1], "r").read()
     regex_pattern = r"[+-]?\d+(?:\.\d+)?"
 
-    search = re.findall(regex_pattern, test_string)
+    search = findall(regex_pattern, text)
     for i, numb in enumerate(search):
         #Strip leading zeroes and the signs
         search[i] = numb.strip("0")
         search[i] = search[i].strip("-")
         search[i] = search[i].strip("+")
 
+        #Seperate leading numbers
+        leading = int(search[i][0])
+        if leading not in leading_numbers:
+            leading_numbers.append(leading)
+
         #Calculate the frequencies
-        frequencies[int(search[i][0])] += 1
+        frequencies[leading] += 1
 
-    print(search)
-    print(frequencies)
+    leading_numbers.sort()
 
-    
+    #Hold only the non-zero elements
+    frequencies_subset = frequencies[leading_numbers[0] : leading_numbers[-1] + 1]
+
+
+    #print(search)
+    #print(leading_numbers)
+    #print(frequencies)
+    #print(frequencies_subset)
+
+    plt.plot(leading_numbers, frequencies_subset)
+    plt.show()
 
 
 
