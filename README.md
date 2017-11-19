@@ -1,5 +1,5 @@
 # BenfordGraph
-This is a simple python script that graphs a curve based on the Benford law
+This is a simple python script that graphs a curve based on the Benford law. Read up on [Benford's Law](https://en.wikipedia.org/wiki/Benford%27s_law).
 
 # Running the script
 
