@@ -3,7 +3,7 @@ This is a simple python script that graphs a curve based on the Benford law. Rea
 
 # Running the script
 
-This script uses Pytohn 3.6
+This script uses Python 3.6
 
 To call this script type:
 
@@ -13,8 +13,10 @@ To call this script type:
 
 Several test data sets are included in the Tests folder, here are the sources:
 
-      [bank-full.csv](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
-      [FL_insurance_sample.csv](https://support.spatialkey.com/spatialkey-sample-csv-data/)
-      [us-500.csv](https://www.briandunning.com/sample-data/)
+[bank-full.csv](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+
+[FL_insurance_sample.csv](https://support.spatialkey.com/spatialkey-sample-csv-data/)
+
+[us-500.csv](https://www.briandunning.com/sample-data/)
 
 
