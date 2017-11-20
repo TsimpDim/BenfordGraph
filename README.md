@@ -5,7 +5,14 @@ This is a simple python script that graphs a curve based on the Benford law
 
 To call this script type:
 
-      `Benford.py <filename.extension>`
-To use the example file (test.txt) type:
+      Benford.py <filename.extension>
 
-      `Benford.py test.txt`
+# Sample data sets
+
+Several test data sets are included in the Tests folder, here are the sources:
+
+      [bank-full.csv](https://archive.ics.uci.edu/ml/datasets/bank+marketing)
+      [FL_insurance_sample.csv](https://support.spatialkey.com/spatialkey-sample-csv-data/)
+      [us-500.csv](https://www.briandunning.com/sample-data/)
+
+
